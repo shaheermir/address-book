@@ -4,9 +4,9 @@ import { Switch, Route } from 'react-router'
 import { BrowserRouter as Router } from 'react-router-dom'
 
 import store from './config/store'
-import AddressBook from './features/address-book/container'
 import Header from './components/Header'
-import ContactDetails from './features/contact-details/component'
+import { AddressBook } from './features/address-book/container'
+import { ContactDetails } from './features/contact-details/container'
 
 function App() {
   return (

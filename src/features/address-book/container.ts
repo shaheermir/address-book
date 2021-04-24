@@ -2,7 +2,7 @@ import { connect } from 'react-redux'
 import { createStructuredSelector } from 'reselect'
 import { TContact, TState } from '../types'
 import { loadAddressBook } from './actions'
-import AddressBook from './component'
+import AddressBookComponent from './component'
 import { selectContactList } from './selectors'
 
 interface TSelectedState {
@@ -17,4 +17,7 @@ const mapDispatchToProps = {
   loadAddressBook,
 }
 
-export default connect(mapStateToProps, mapDispatchToProps)(AddressBook)
+export const AddressBook = connect(
+  mapStateToProps,
+  mapDispatchToProps
+)(AddressBookComponent)

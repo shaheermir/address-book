@@ -1,1 +1,1 @@
-export * from './container'
+export { AddressBook } from './container'

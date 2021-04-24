@@ -1,6 +1,5 @@
 import { createSelector } from 'reselect'
-import { path } from 'ramda'
-import { TState } from '../types'
+import { TContact, TState } from '../types'
 import { TAddressBookState } from './reducer'
 
 export const selectAddressBookDomain = (state: TState): TAddressBookState =>
@@ -8,5 +7,10 @@ export const selectAddressBookDomain = (state: TState): TAddressBookState =>
 
 export const selectContactList = createSelector(
   selectAddressBookDomain,
-  path(['contactList'])
+  (addressBook) => addressBook.contactList
 )
+
+export const selectContact = (id: string) =>
+  createSelector(selectContactList, (contacts: TContact[]) =>
+    contacts.find((c) => c.id === id)
+  )

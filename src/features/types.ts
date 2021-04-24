@@ -1,7 +1,7 @@
 import { TAddressBookState } from './address-book/reducer'
 
 export type TContact = {
-  id: string
+  id?: string
   email: string
   phone: string
   picture: {

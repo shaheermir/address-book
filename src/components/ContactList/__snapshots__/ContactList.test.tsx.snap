@@ -1,0 +1,66 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ContactList renders contact list 1`] = `
+<styled.div>
+  <ContactCard
+    contact={
+      Object {
+        "email": "allan.nguyen@example.com",
+        "id": "0-allan-nguyen",
+        "name": Object {
+          "first": "Allan",
+          "last": "Nguyen",
+          "title": "Mr",
+        },
+        "phone": "013873 67584",
+        "picture": Object {
+          "large": "https://randomuser.me/api/portraits/men/40.jpg",
+          "medium": "https://randomuser.me/api/portraits/med/men/40.jpg",
+          "thumbnail": "https://randomuser.me/api/portraits/thumb/men/40.jpg",
+        },
+      }
+    }
+    key="0-allan-nguyen"
+  />
+  <ContactCard
+    contact={
+      Object {
+        "email": "connor.mitchell@example.com",
+        "id": "1-connor-mitchell",
+        "name": Object {
+          "first": "Connor",
+          "last": "Mitchell",
+          "title": "Mr",
+        },
+        "phone": "(799)-330-4934",
+        "picture": Object {
+          "large": "https://randomuser.me/api/portraits/men/1.jpg",
+          "medium": "https://randomuser.me/api/portraits/med/men/1.jpg",
+          "thumbnail": "https://randomuser.me/api/portraits/thumb/men/1.jpg",
+        },
+      }
+    }
+    key="1-connor-mitchell"
+  />
+  <ContactCard
+    contact={
+      Object {
+        "email": "ricky.pearson@example.com",
+        "id": "2-ricky-pearson",
+        "name": Object {
+          "first": "Ricky",
+          "last": "Pearson",
+          "title": "Mr",
+        },
+        "phone": "(754)-624-7123",
+        "picture": Object {
+          "large": "https://randomuser.me/api/portraits/men/74.jpg",
+          "medium": "https://randomuser.me/api/portraits/med/men/74.jpg",
+          "thumbnail": "https://randomuser.me/api/portraits/thumb/men/74.jpg",
+        },
+      }
+    }
+    key="2-ricky-pearson"
+  />
+</styled.div>
+`;

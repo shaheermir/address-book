@@ -14,7 +14,7 @@ const transformData = (contacts: TContact[]) =>
     id: `${i}-${c.name.first.toLowerCase()}-${c.name.last.toLowerCase()}`,
   }))
 
-function* loadAddressBookSaga(action: TAddressBookAction) {
+export function* loadAddressBookSaga(action: TAddressBookAction) {
   try {
     const data: TResponse = yield call(fetchAddressBookAPI, action.payload)
     yield put(addressBookSuccess(transformData(data.results)))

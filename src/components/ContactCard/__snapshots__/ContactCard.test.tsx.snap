@@ -1,0 +1,16 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ContactCard renders contact 1`] = `
+<Styled(Link)
+  to="/contact-details/0-allan-nguyen"
+>
+  <styled.img
+    src="https://randomuser.me/api/portraits/med/men/40.jpg"
+  />
+  <styled.span>
+    Allan
+     
+    Nguyen
+  </styled.span>
+</Styled(Link)>
+`;

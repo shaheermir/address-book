@@ -8,7 +8,7 @@ export type TAddressBookState = {
   contactList: TContact[]
 }
 
-const initialState: TAddressBookState = {
+export const initialState: TAddressBookState = {
   loading: false,
   error: false,
   contactList: [],

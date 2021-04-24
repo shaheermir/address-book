@@ -7,17 +7,22 @@ import store from './config/store'
 import Header from './components/Header'
 import { AddressBook } from './features/address-book/container'
 import { ContactDetails } from './features/contact-details/container'
+import { ThemeProvider } from 'styled-components'
+import { theme, GlobalStyle } from './config/theme'
 
 function App() {
   return (
     <Provider store={store}>
-      <Router>
-        <Header />
-        <Switch>
-          <Route exact path='/' component={AddressBook} />
-          <Route exact path='/contact-details/:id' component={ContactDetails} />
-        </Switch>
-      </Router>
+      <ThemeProvider theme={theme}>
+        <GlobalStyle />
+        <Router>
+          <Header />
+          <Switch>
+            <Route exact path='/' component={AddressBook} />
+            <Route exact path='/contact-details/:id' component={ContactDetails} />
+          </Switch>
+        </Router>
+      </ThemeProvider>
     </Provider>
   )
 }

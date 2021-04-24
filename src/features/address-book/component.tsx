@@ -1,4 +1,5 @@
 import React, { useEffect } from 'react'
+import styled from 'styled-components'
 import ContactList from '../../components/ContactList'
 import { TContact } from '../types'
 import { TRequestParams } from './actions'
@@ -7,19 +8,25 @@ type PropTypes = {
   loadAddressBook: (params: TRequestParams) => void
   contacts: TContact[]
 }
+const Container = styled.div`
+  max-width: 95%;
+  margin: 0 auto;
+`
 function AddressBook({ loadAddressBook, contacts }: PropTypes): JSX.Element {
   useEffect(() => {
-    loadAddressBook({
-      numberOfResults: 50,
-      seed: 'abc',
-      include: 'name,phone,picture,email',
-    })
+    if (!contacts?.length) {
+      loadAddressBook({
+        page: 1,
+        results: 72,
+        nat: 'gb,us',
+        inc: 'name,phone,picture,email',
+      })
+    }
   }, [])
   return (
-    <div>
-      <p>AddressBook</p>
+    <Container>
       <ContactList contacts={contacts} />
-    </div>
+    </Container>
   )
 }
 

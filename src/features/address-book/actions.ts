@@ -12,9 +12,10 @@ export type TAddressBookAction = {
 }
 
 export type TRequestParams = {
-  numberOfResults: number
-  seed: string
-  include: string
+  inc?: string
+  page?: number
+  results?: number
+  nat?: string
 }
 
 export const loadAddressBook = (params: TRequestParams): TAddressBookAction => ({

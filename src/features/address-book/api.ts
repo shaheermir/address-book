@@ -1,3 +1,4 @@
+import { createQueryString } from '../../utils/createQueryString'
 import { TContact } from '../types'
 import { TRequestParams } from './actions'
 
@@ -5,11 +6,8 @@ export type TResponse = {
   results: TContact[]
 }
 
-export async function fetchAddressBookAPI({
-  numberOfResults,
-  seed,
-  include,
-}: TRequestParams): Promise<TResponse> {
-  const url = `https://randomuser.me/api?results=${numberOfResults}&seed=${seed}&inc=${include}`
+export async function fetchAddressBookAPI(params: TRequestParams): Promise<TResponse> {
+  const queryParams = createQueryString(params)
+  const url = `https://randomuser.me/api?${queryParams}`
   return fetch(url).then((res) => res.json())
 }

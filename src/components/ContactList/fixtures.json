@@ -1,0 +1,47 @@
+[
+  {
+    "name": {
+      "title": "Mr",
+      "first": "Allan",
+      "last": "Nguyen"
+    },
+    "email": "allan.nguyen@example.com",
+    "phone": "013873 67584",
+    "picture": {
+      "large": "https://randomuser.me/api/portraits/men/40.jpg",
+      "medium": "https://randomuser.me/api/portraits/med/men/40.jpg",
+      "thumbnail": "https://randomuser.me/api/portraits/thumb/men/40.jpg"
+    },
+    "id": "0-allan-nguyen"
+  },
+  {
+    "name": {
+      "title": "Mr",
+      "first": "Connor",
+      "last": "Mitchell"
+    },
+    "email": "connor.mitchell@example.com",
+    "phone": "(799)-330-4934",
+    "picture": {
+      "large": "https://randomuser.me/api/portraits/men/1.jpg",
+      "medium": "https://randomuser.me/api/portraits/med/men/1.jpg",
+      "thumbnail": "https://randomuser.me/api/portraits/thumb/men/1.jpg"
+    },
+    "id": "1-connor-mitchell"
+  },
+  {
+    "name": {
+      "title": "Mr",
+      "first": "Ricky",
+      "last": "Pearson"
+    },
+    "email": "ricky.pearson@example.com",
+    "phone": "(754)-624-7123",
+    "picture": {
+      "large": "https://randomuser.me/api/portraits/men/74.jpg",
+      "medium": "https://randomuser.me/api/portraits/med/men/74.jpg",
+      "thumbnail": "https://randomuser.me/api/portraits/thumb/men/74.jpg"
+    },
+    "id": "2-ricky-pearson"
+  }
+]

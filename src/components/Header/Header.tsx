@@ -14,7 +14,7 @@ const Container = styled.div`
   padding-bottom: ${({ theme }) => theme.paddings.base};
 `
 
-export default function Header() {
+export function Header() {
   return (
     <Container>
       <H1>

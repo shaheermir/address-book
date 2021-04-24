@@ -1,6 +1,6 @@
 import React from 'react'
-import { TContact } from '../features/types'
-import ContactCard from './ContactCard'
+import { TContact } from '../../features/types'
+import { ContactCard } from '../ContactCard'
 import styled from 'styled-components'
 
 type TProps = {
@@ -13,7 +13,7 @@ const Container = styled.div`
   justify-content: space-evenly;
 `
 
-function ContactList({ contacts }: TProps) {
+export function ContactList({ contacts }: TProps) {
   return (
     <Container>
       {contacts.map((contact) => (
@@ -22,5 +22,3 @@ function ContactList({ contacts }: TProps) {
     </Container>
   )
 }
-
-export default ContactList

@@ -4,7 +4,7 @@ import { Switch, Route } from 'react-router'
 import { BrowserRouter as Router } from 'react-router-dom'
 
 import store from './config/store'
-import Header from './components/Header'
+import { Header } from './components/Header/'
 import { AddressBook } from './features/address-book/container'
 import { ContactDetails } from './features/contact-details/container'
 import { ThemeProvider } from 'styled-components'

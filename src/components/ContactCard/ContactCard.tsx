@@ -1,6 +1,6 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
-import { TContact } from '../features/types'
+import { TContact } from '../../features/types'
 import styled from 'styled-components'
 
 type TProps = {
@@ -30,7 +30,7 @@ const Avatar = styled.img`
   border-radius: 50%;
 `
 
-export default function ContactCard({ contact }: TProps): JSX.Element {
+export function ContactCard({ contact }: TProps): JSX.Element {
   return (
     <Container to={`/contact-details/${contact.id}`}>
       <Avatar src={contact.picture.medium} />

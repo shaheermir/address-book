@@ -14,3 +14,8 @@ export const selectContact = (id: string) =>
   createSelector(selectContactList, (contacts: TContact[]) =>
     contacts.find((c) => c.id === id)
   )
+
+export const selectIsLoading = createSelector(
+  selectAddressBookDomain,
+  (addressBook) => addressBook.loading
+)

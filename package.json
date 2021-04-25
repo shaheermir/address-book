@@ -93,7 +93,7 @@
         "statements": 10,
         "branches": 10,
         "lines": 10,
-        "functions": 100
+        "functions": 10
       }
     },
     "snapshotSerializers": [
